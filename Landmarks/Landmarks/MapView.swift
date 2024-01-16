@@ -13,7 +13,7 @@ struct MapView: View {
         Map(initialPosition: .region(region))
     }
     
-    
+    // setting up the location and view for the map
     private var region: MKCoordinateRegion{
         MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
