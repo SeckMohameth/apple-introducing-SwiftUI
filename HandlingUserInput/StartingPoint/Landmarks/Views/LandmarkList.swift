@@ -1,12 +1,11 @@
-//
-//  LandmarkList.swift
-//  Landmarks
-//
-//  Created by Mohameth Seck on 1/16/24.
-//
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+A view showing a list of landmarks.
+*/
 
 import SwiftUI
-
 
 struct LandmarkList: View {
     var body: some View {
@@ -24,7 +23,6 @@ struct LandmarkList: View {
         }
     }
 }
-
 
 #Preview {
     LandmarkList()
