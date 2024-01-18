@@ -8,11 +8,11 @@ A view showing a list of landmarks.
 import SwiftUI
 
 struct LandmarkList: View {
-    
+    @Enviroment(ModelData.self) var modelData
     @State private var showFavoritesOnly = false
     
     var filteredLandmarks: [Landmark] {
-        landmarks.filter { landmark in
+        modelData.landmarks.filter { landmark in
             (!showFavoritesOnly || landmark.isFavorite)
         }
     }
